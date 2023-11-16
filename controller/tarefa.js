@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const tarefaModel = require('./tarefa.model');
+const tarefaModel = require('../model/tarefa');
 
 //Insere nova tarefa
 router.post('/', async (req, res) => {

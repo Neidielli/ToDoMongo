@@ -15,4 +15,6 @@ const tarefaSchema = new mongoose.Schema({
   }
 });
 
+mongoose.connect('mongodb://localhost:27017/tarefas');
+
 module.exports = mongoose.model('Tarefa', tarefaSchema);
